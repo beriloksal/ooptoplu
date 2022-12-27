@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>64ae2deb-62b5-44c1-9433-c7fa31a47200</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>loginPage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>project</Name>
+    <RootNamespace>main</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="admin.py" />
+    <Compile Include="customer.py" />
+    <Compile Include="loginPage.py" />
+    <Compile Include="guest_homepage.py" />
+    <Compile Include="cinema_seats.py" />
+    <Compile Include="signup_page.py" />
+    <Compile Include="frontdeskofficer.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.png" />
+    <Content Include="back_icon.png" />
+    <Content Include="cinema.jpg" />
+    <Content Include="loginpage.png" />
+    <Content Include="movies.png" />
+    <Content Include="popcorn.png" />
+    <Content Include="popcorn2.png" />
+    <Content Include="popcorn3.png" />
+    <Content Include="seats1.jpg" />
+    <Content Include="seats2.jpg" />
+    <Content Include="signup_icon.png" />
+    <Content Include="welcome.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
